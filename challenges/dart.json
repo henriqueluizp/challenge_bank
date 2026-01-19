@@ -1,8 +1,8 @@
 [
   {
     "id": "dart_001",
-    "title": "Reverse String",
-    "description": "Write a function that receives a string and returns the reverse.",
+    "title": "Inverter String",
+    "description": "Escreva uma função que recebe uma string e retorna o seu inverso.",
     "solution": "String reverse(String input) => input.split('').reversed.join();",
     "level": "easy",
     "languageId": "dart",
