@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "id": "javascript_001",
+    "title": "Somar multiplos",
+    "description": "Dado um numero N, retorne a soma de todos os multiplos de 3 e 5 menores que N.",
+    "solution": "function sumMultiples(n){let sum=0;for(let i=1;i<n;i++){if(i%3===0||i%5===0)sum+=i;}return sum;}",
+    "level": "easy",
+    "languageId": "javascript",
+    "isCompleted": false
+  },
+  {
+    "id": "javascript_002",
+    "title": "String unica",
+    "description": "Verifique se uma string possui todos os caracteres unicos.",
+    "solution": "function allUnique(str){const seen=new Set();for(const ch of str){if(seen.has(ch))return false;seen.add(ch);}return true;}",
+    "level": "medium",
+    "languageId": "javascript",
+    "isCompleted": false
+  },
+  {
+    "id": "javascript_003",
+    "title": "Ordenar por comprimento",
+    "description": "Ordene um array de strings pelo tamanho, do menor para o maior.",
+    "solution": "function sortByLength(arr){return [...arr].sort((a,b)=>a.length-b.length);}",
+    "level": "easy",
+    "languageId": "javascript",
+    "isCompleted": false
+  },
+  {
+    "id": "javascript_004",
+    "title": "Contar ocorrencias",
+    "description": "Conte quantas vezes cada palavra aparece em uma frase.",
+    "solution": "function wordCount(text){return text.toLowerCase().split(/\s+/).reduce((acc,w)=>{acc[w]=(acc[w]||0)+1;return acc;},{});}",
+    "level": "medium",
+    "languageId": "javascript",
+    "isCompleted": false
+  },
+  {
+    "id": "javascript_005",
+    "title": "Primeiro nao repetido",
+    "description": "Retorne o primeiro caractere que nao se repete em uma string. Se nao existir, retorne vazio.",
+    "solution": "function firstNonRepeated(str){const count={};for(const ch of str){count[ch]=(count[ch]||0)+1;}for(const ch of str){if(count[ch]===1)return ch;}return '';}",
+    "level": "hard",
+    "languageId": "javascript",
+    "isCompleted": false
+  }
+]

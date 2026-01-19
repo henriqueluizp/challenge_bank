@@ -7,5 +7,15 @@
     "id": "javascript",
     "label": "JavaScript",
     "aliases": ["js"]
+  },
+  {
+    "id": "python",
+    "label": "Python",
+    "aliases": ["py"]
+  },
+  {
+    "id": "java",
+    "label": "Java",
+    "aliases": ["jdk"]
   }
 ]

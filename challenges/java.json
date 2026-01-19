@@ -1,0 +1,38 @@
+[
+  {
+    "id": "java_001",
+    "title": "Maior numero",
+    "description": "Dado um array de inteiros, encontre o maior valor.",
+    "solution": "int max(int[] values){int max=values[0];for(int v:values){if(v>max)max=v;}return max;}",
+    "level": "easy",
+    "languageId": "java",
+    "isCompleted": false
+  },
+  {
+    "id": "java_002",
+    "title": "Remover duplicados",
+    "description": "Remova elementos duplicados de um array mantendo a ordem original.",
+    "solution": "List<Integer> unique(int[] values){Set<Integer> seen=new HashSet<>();List<Integer> out=new ArrayList<>();for(int v:values){if(seen.add(v))out.add(v);}return out;}",
+    "level": "medium",
+    "languageId": "java",
+    "isCompleted": false
+  },
+  {
+    "id": "java_003",
+    "title": "Verificar primo",
+    "description": "Crie uma funcao que diga se um numero e primo.",
+    "solution": "boolean isPrime(int n){if(n<2)return false;for(int i=2;i*i<=n;i++){if(n%i==0)return false;}return true;}",
+    "level": "medium",
+    "languageId": "java",
+    "isCompleted": false
+  },
+  {
+    "id": "java_004",
+    "title": "Rotacionar array",
+    "description": "Rotacione um array para a direita em k posicoes.",
+    "solution": "int[] rotate(int[] arr,int k){int n=arr.length;k%=n;int[] out=new int[n];for(int i=0;i<n;i++){out[(i+k)%n]=arr[i];}return out;}",
+    "level": "hard",
+    "languageId": "java",
+    "isCompleted": false
+  }
+]
