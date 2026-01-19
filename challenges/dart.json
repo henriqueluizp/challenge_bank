@@ -1,0 +1,10 @@
+[
+  {
+    "id": "dart_001",
+    "title": "Reverse String",
+    "description": "Write a function that receives a string and returns the reverse.",
+    "solution": "String reverse(String input) => input.split('').reversed.join();",
+    "level": "easy",
+    "languageId": "dart"
+  }
+]
