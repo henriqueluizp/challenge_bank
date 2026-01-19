@@ -1,22 +1,52 @@
 # Challenge Bank
 
 Repositorio exclusivo para desafios em JSON.
-O app consome esses arquivos sem expor o codigo.
+Este repo e consumido pelo app, sem acesso ao codigo-fonte.
 
-Estrutura sugerida:
-- schema.json
-- languages.json
-- challenges/
-  - dart.json
-  - javascript.json
+## Objetivo
+- Receber PRs da comunidade com novos desafios.
+- Manter os desafios isolados do repositorio do app.
 
-Regras:
-- languageId deve existir em languages.json
-- level: easy | medium | hard
-- isCompleted entra no repo (bool)
+## Politica de contribuicao
+- O repositorio do app nao aceita PRs de desafios.
+- Pull requests devem conter apenas arquivos JSON em `challenges/`.
 
-Publicacao rapida:
-1) git init
-2) git add . && git commit -m "Initial challenges"
-3) git remote add origin <URL>
-4) git push -u origin main
+## Estrutura
+- `languages.json` lista as linguagens disponiveis
+- `schema.json` define o formato valido de um desafio
+- `challenges/` contem um arquivo por linguagem
+  - `dart.json`
+  - `javascript.json`
+  - `python.json`
+  - `java.json`
+
+## Formato do desafio
+Cada arquivo de linguagem e um array de objetos no formato:
+
+```json
+[
+  {
+    "id": "dart_001",
+    "title": "Inverter string",
+    "description": "Escreva uma funcao que receba uma string e retorne o seu inverso.",
+    "solution": "String reverse(String input) => input.split('').reversed.join();",
+    "level": "easy",
+    "languageId": "dart",
+    "isCompleted": false
+  }
+]
+```
+
+## Campos
+- `id`: identificador unico do desafio
+- `title`: titulo exibido ao usuario
+- `description`: enunciado do desafio
+- `solution`: uma solucao valida (texto ou codigo)
+- `level`: `easy` | `medium` | `hard`
+- `languageId`: deve existir em `languages.json`
+- `isCompleted`: bool (pode iniciar como `false`)
+
+## Regras
+- Cada linguagem deve ter um arquivo com nome igual ao `languageId`.
+- Evite duplicar `id` entre desafios.
+- Mantenha o texto em portugues.
