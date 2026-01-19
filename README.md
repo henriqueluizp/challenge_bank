@@ -13,7 +13,7 @@ Estrutura sugerida:
 Regras:
 - languageId deve existir em languages.json
 - level: easy | medium | hard
-- isCompleted e somente no app (nao entra no repo)
+- isCompleted entra no repo (bool)
 
 Publicacao rapida:
 1) git init

@@ -8,7 +8,8 @@
     "description",
     "solution",
     "level",
-    "languageId"
+    "languageId",
+    "isCompleted"
   ],
   "properties": {
     "id": { "type": "string" },
@@ -16,7 +17,8 @@
     "description": { "type": "string" },
     "solution": { "type": "string" },
     "level": { "type": "string", "enum": ["easy", "medium", "hard"] },
-    "languageId": { "type": "string" }
+    "languageId": { "type": "string" },
+    "isCompleted": { "type": "boolean" }
   },
   "additionalProperties": false
 }

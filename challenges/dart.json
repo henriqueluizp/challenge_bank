@@ -5,6 +5,7 @@
     "description": "Write a function that receives a string and returns the reverse.",
     "solution": "String reverse(String input) => input.split('').reversed.join();",
     "level": "easy",
-    "languageId": "dart"
+    "languageId": "dart",
+    "isCompleted": false
   }
 ]
