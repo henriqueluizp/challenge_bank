@@ -6,7 +6,7 @@
   {
     "id": "javascript",
     "label": "JavaScript",
-    "aliases": ["js"]
+    "aliases": ["js", "javascript"]
   },
   {
     "id": "python",
