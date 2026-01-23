@@ -20,10 +20,12 @@
   },
   {
     "id": "php",
-    "label": "PHP"
+    "label": "PHP",
+    "aliases": ["php8", "php7", "php"]
   },
   {
     "id": "ruby",
-    "label": "Ruby"
+    "label": "Ruby",
+    "aliases": ["rb"]
   }
 ]
