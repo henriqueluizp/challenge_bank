@@ -1,0 +1,20 @@
+[
+  {
+    "id": "ruby_001",
+    "title": "Inverter string",
+    "description": "Escreva uma função que receba uma string e retorne o seu inverso.\n",
+    "solution": "def reverse_string(str)\n  str.reverse\nend\n",
+    "level": "easy",
+    "languageId": "ruby",
+    "isCompleted": false
+  },
+  {
+    "id": "ruby_002",
+    "title": "Somar pares",
+    "description": "Dada uma lista de inteiros, retorne a soma apenas dos números pares.\n",
+    "solution": "def sum_even(arr)\n  arr.select { |n| n.even? }.sum\nend\n",
+    "level": "easy",
+    "languageId": "ruby",
+    "isCompleted": false
+  }
+]

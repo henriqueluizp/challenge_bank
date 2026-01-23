@@ -2,8 +2,8 @@
   {
     "id": "dart_001",
     "title": "Inverter string",
-    "description": "Escreva uma funcao que receba uma string e retorne o seu inverso.",
-    "solution": "String reverse(String input) => input.split('').reversed.join();",
+    "description": "Escreva uma função que receba uma string e retorne o seu inverso.\n",
+    "solution": "String reverse(String input) => input.split('').reversed.join();\n",
     "level": "easy",
     "languageId": "dart",
     "isCompleted": false
@@ -11,8 +11,8 @@
   {
     "id": "dart_002",
     "title": "Somar pares",
-    "description": "Dada uma lista de inteiros, retorne a soma apenas dos numeros pares.",
-    "solution": "int sumEven(List<int> values) => values.where((v) => v % 2 == 0).fold(0, (a, b) => a + b);",
+    "description": "Dada uma lista de inteiros, retorne a soma apenas dos números pares.\n",
+    "solution": "int sumEven(List<int> values) => values.where((v) => v % 2 == 0).fold(0, (a, b) => a + b);\n",
     "level": "easy",
     "languageId": "dart",
     "isCompleted": false
@@ -20,27 +20,54 @@
   {
     "id": "dart_003",
     "title": "Contar vogais",
-    "description": "Crie uma funcao que conte quantas vogais existem em uma string.",
-    "solution": "int countVowels(String input) => input.toLowerCase().runes.where((c) => 'aeiou'.codeUnits.contains(c)).length;",
+    "description": "Crie uma função que conte quantas vogais existem em uma string.\n",
+    "solution": "int countVowels(String input) => input.toLowerCase().runes.where((c) => 'aeiou'.codeUnits.contains(c)).length;\n",
     "level": "medium",
     "languageId": "dart",
     "isCompleted": false
   },
   {
     "id": "dart_004",
-    "title": "Palindromo",
-    "description": "Verifique se uma string e um palindromo (ignore espacos e maiusculas).",
-    "solution": "bool isPalindrome(String input) { final normalized = input.toLowerCase().replaceAll(RegExp(r'\\s+'), ''); return normalized == normalized.split('').reversed.join(); }",
+    "title": "Palíndromo",
+    "description": "Verifique se uma string é um palíndromo (ignore espaços e maiúsculas).\n",
+    "solution": "bool isPalindrome(String input) { final normalized = input.toLowerCase().replaceAll(RegExp(r'\\s+'), ''); return normalized == normalized.split('').reversed.join(); }\n",
     "level": "medium",
     "languageId": "dart",
     "isCompleted": false
   },
   {
     "id": "dart_005",
-    "title": "Sequencia de Fibonacci",
-    "description": "Implemente uma funcao que retorne o n-esimo termo da sequencia de Fibonacci.",
-    "solution": "int fib(int n) { if (n <= 1) return n; var a = 0, b = 1; for (var i = 2; i <= n; i++) { final t = a + b; a = b; b = t; } return b; }",
+    "title": "Sequência de Fibonacci",
+    "description": "Implemente uma função que retorne o n-ésimo termo da sequência de Fibonacci.\n",
+    "solution": "int fib(int n) { if (n <= 1) return n; var a = 0, b = 1; for (var i = 2; i <= n; i++) { final t = a + b; a = b; b = t; } return b; }\n",
     "level": "hard",
+    "languageId": "dart",
+    "isCompleted": false
+  },
+  {
+    "id": "dart_006",
+    "title": "Fatorial",
+    "description": "Calcule o fatorial de um número inteiro não negativo.\n",
+    "solution": "int factorial(int n) => n <= 1 ? 1 : n * factorial(n - 1);\n",
+    "level": "easy",
+    "languageId": "dart",
+    "isCompleted": false
+  },
+  {
+    "id": "dart_007",
+    "title": "Ordenar lista",
+    "description": "Ordene uma lista de números inteiros em ordem crescente.\n",
+    "solution": "List<int> sortList(List<int> numbers) => numbers..sort();\n",
+    "level": "easy",
+    "languageId": "dart",
+    "isCompleted": false
+  },
+  {
+    "id": "dart_008",
+    "title": "Maior elemento",
+    "description": "Encontre o maior elemento em uma lista de números inteiros.\n",
+    "solution": "int findMax(List<int> numbers) => numbers.reduce((a, b) => a > b ? a : b);\n",
+    "level": "medium",
     "languageId": "dart",
     "isCompleted": false
   }
