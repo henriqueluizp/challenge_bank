@@ -1,9 +1,9 @@
 [
   {
     "id": "java_001",
-    "title": "Maior numero",
-    "description": "Dado um array de inteiros, encontre o maior valor.",
-    "solution": "int max(int[] values){int max=values[0];for(int v:values){if(v>max)max=v;}return max;}",
+    "title": "Maior número",
+    "description": "Dado um array de inteiros, encontre o maior valor.\n",
+    "solution": "int max(int[] values) {\n  int max = values[0];\n  for (int v : values) {\n    if (v > max) max = v;\n  }\n  return max;\n}\n",
     "level": "easy",
     "languageId": "java",
     "isCompleted": false
@@ -11,8 +11,8 @@
   {
     "id": "java_002",
     "title": "Remover duplicados",
-    "description": "Remova elementos duplicados de um array mantendo a ordem original.",
-    "solution": "List<Integer> unique(int[] values){Set<Integer> seen=new HashSet<>();List<Integer> out=new ArrayList<>();for(int v:values){if(seen.add(v))out.add(v);}return out;}",
+    "description": "Remova elementos duplicados de um array mantendo a ordem original.\n",
+    "solution": "List<Integer> unique(int[] values) {\n  Set<Integer> seen = new HashSet<>();\n  List<Integer> out = new ArrayList<>();\n  for (int v : values) {\n    if (seen.add(v)) out.add(v);\n  }\n  return out;\n}\n",
     "level": "medium",
     "languageId": "java",
     "isCompleted": false
@@ -20,8 +20,8 @@
   {
     "id": "java_003",
     "title": "Verificar primo",
-    "description": "Crie uma funcao que diga se um numero e primo.",
-    "solution": "boolean isPrime(int n){if(n<2)return false;for(int i=2;i*i<=n;i++){if(n%i==0)return false;}return true;}",
+    "description": "Crie uma função que diga se um número é primo.\n",
+    "solution": "boolean isPrime(int n) {\n  if (n < 2) return false;\n  for (int i = 2; i * i <= n; i++) {\n    if (n % i == 0) return false;\n  }\n  return true;\n}\n",
     "level": "medium",
     "languageId": "java",
     "isCompleted": false
@@ -29,8 +29,8 @@
   {
     "id": "java_004",
     "title": "Rotacionar array",
-    "description": "Rotacione um array para a direita em k posicoes.",
-    "solution": "int[] rotate(int[] arr,int k){int n=arr.length;k%=n;int[] out=new int[n];for(int i=0;i<n;i++){out[(i+k)%n]=arr[i];}return out;}",
+    "description": "Rotacione um array para a direita em k posições.\n",
+    "solution": "int[] rotate(int[] arr, int k) {\n  int n = arr.length;\n  k %= n;\n  int[] out = new int[n];\n  for (int i = 0; i < n; i++) {\n    out[(i + k) % n] = arr[i];\n  }\n  return out;\n}\n",
     "level": "hard",
     "languageId": "java",
     "isCompleted": false

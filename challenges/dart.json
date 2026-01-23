@@ -30,7 +30,7 @@
     "id": "dart_004",
     "title": "Palíndromo",
     "description": "Verifique se uma string é um palíndromo (ignore espaços e maiúsculas).\n",
-    "solution": "bool isPalindrome(String input) { final normalized = input.toLowerCase().replaceAll(RegExp(r'\\s+'), ''); return normalized == normalized.split('').reversed.join(); }\n",
+    "solution": "bool isPalindrome(String input) {\n  final normalized = input.toLowerCase().replaceAll(RegExp(r'\\s+'), '');\n  return normalized == normalized.split('').reversed.join();\n}\n",
     "level": "medium",
     "languageId": "dart",
     "isCompleted": false
@@ -39,7 +39,7 @@
     "id": "dart_005",
     "title": "Sequência de Fibonacci",
     "description": "Implemente uma função que retorne o n-ésimo termo da sequência de Fibonacci.\n",
-    "solution": "int fib(int n) { if (n <= 1) return n; var a = 0, b = 1; for (var i = 2; i <= n; i++) { final t = a + b; a = b; b = t; } return b; }\n",
+    "solution": "int fib(int n) {\n  if (n <= 1) return n;\n  var a = 0, b = 1;\n  for (var i = 2; i <= n; i++) {\n    final t = a + b;\n    a = b;\n    b = t;\n  }\n  return b;\n}\n",
     "level": "hard",
     "languageId": "dart",
     "isCompleted": false
