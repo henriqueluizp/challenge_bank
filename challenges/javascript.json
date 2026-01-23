@@ -1,18 +1,18 @@
 [
   {
     "id": "javascript_001",
-    "title": "Somar multiplos",
-    "description": "Dado um numero N, retorne a soma de todos os multiplos de 3 e 5 menores que N.",
-    "solution": "function sumMultiples(n){let sum=0;for(let i=1;i<n;i++){if(i%3===0||i%5===0)sum+=i;}return sum;}",
+    "title": "Somar múltiplos",
+    "description": "Dado um número N, retorne a soma de todos os múltiplos de 3 e 5 menores que N.\n",
+    "solution": "function sumMultiples(n) {\n  let sum = 0;\n  for (let i = 1; i < n; i++) {\n    if (i % 3 === 0 || i % 5 === 0) sum += i;\n  }\n  return sum;\n}\n",
     "level": "easy",
     "languageId": "javascript",
     "isCompleted": false
   },
   {
     "id": "javascript_002",
-    "title": "String unica",
-    "description": "Verifique se uma string possui todos os caracteres unicos.",
-    "solution": "function allUnique(str){const seen=new Set();for(const ch of str){if(seen.has(ch))return false;seen.add(ch);}return true;}",
+    "title": "String única",
+    "description": "Verifique se uma string possui todos os caracteres únicos.\n",
+    "solution": "function allUnique(str) {\n  const seen = new Set();\n  for (const ch of str) {\n    if (seen.has(ch)) return false;\n    seen.add(ch);\n  }\n  return true;\n}\n",
     "level": "medium",
     "languageId": "javascript",
     "isCompleted": false
@@ -20,35 +20,35 @@
   {
     "id": "javascript_003",
     "title": "Ordenar por comprimento",
-    "description": "Ordene um array de strings pelo tamanho, do menor para o maior.",
-    "solution": "function sortByLength(arr){return [...arr].sort((a,b)=>a.length-b.length);}",
+    "description": "Ordene um array de strings pelo tamanho, do menor para o maior.\n",
+    "solution": "function sortByLength(arr) {\n  return [...arr].sort((a, b) => a.length - b.length);\n}\n",
     "level": "easy",
     "languageId": "javascript",
     "isCompleted": false
   },
   {
     "id": "javascript_004",
-    "title": "Contar ocorrencias",
-    "description": "Conte quantas vezes cada palavra aparece em uma frase.",
-    "solution": "function wordCount(text){return text.toLowerCase().split(/\\\\s+/).reduce((acc,w)=>{acc[w]=(acc[w]||0)+1;return acc;},{});}",
+    "title": "Contar ocorrências",
+    "description": "Conte quantas vezes cada palavra aparece em uma frase.\n",
+    "solution": "function wordCount(text) {\n  return text\n    .toLowerCase()\n    .split(/\\s+/)\n    .reduce((acc, w) => {\n      acc[w] = (acc[w] || 0) + 1;\n      return acc;\n    }, {});\n}\n",
     "level": "medium",
     "languageId": "javascript",
     "isCompleted": false
   },
   {
     "id": "javascript_005",
-    "title": "Primeiro nao repetido",
-    "description": "Retorne o primeiro caractere que nao se repete em uma string. Se nao existir, retorne vazio.",
-    "solution": "function firstNonRepeated(str){const count={};for(const ch of str){count[ch]=(count[ch]||0)+1;}for(const ch of str){if(count[ch]===1)return ch;}return '';}",
+    "title": "Primeiro não repetido",
+    "description": "Retorne o primeiro caractere que não se repete em uma string. Se não existir, retorne vazio.\n",
+    "solution": "function firstNonRepeated(str) {\n  const count = {};\n  for (const ch of str) {\n    count[ch] = (count[ch] || 0) + 1;\n  }\n  for (const ch of str) {\n    if (count[ch] === 1) return ch;\n  }\n  return '';\n}\n",
     "level": "hard",
     "languageId": "javascript",
     "isCompleted": false
   },
   {
     "id": "javascript_006",
-    "title": "Parenteses balanceados",
-    "description": "Verifique se uma string possui parenteses balanceados.",
-    "solution": "function balanced(text){let count=0;for(const ch of text){if(ch==='(')count++;if(ch===')')count--;if(count<0)return false;}return count===0;}",
+    "title": "Parênteses balanceados",
+    "description": "Verifique se uma string possui parênteses balanceados.\n",
+    "solution": "function balanced(text) {\n  let count = 0;\n  for (const ch of text) {\n    if (ch === '(') count++;\n    if (ch === ')') count--;\n    if (count < 0) return false;\n  }\n  return count === 0;\n}\n",
     "level": "medium",
     "languageId": "javascript",
     "isCompleted": false
